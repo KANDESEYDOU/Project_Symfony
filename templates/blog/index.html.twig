@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+
+<section class="articles">
+	<h1> <center class="them" > BIENVENUE DANS COMPTABILITE MULTISERVICES!</center> </h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.them { background-color: skyblue }
+</style>
+    
+    <article>
+		<H2>WARI SENEGAL</H2>
+		<center>
+			<P>Qui sommes-nous ?</P>
+		<img src="/image/OIPP.jpg" alt="My Wari">
+		</center>	
+		<div class="metadata">
+			<P>Wari offre un éventail de services financiers et commerciaux accessibles de pratiquement partout: paiement, transfert national et international d'argent, recharge de crédit téléphone, transport, service, marketplace, paiement de factures, communications.. Notre objectif est de fournir des solutions correspondant au plus près aux besoins et aux désirs des personnes et de les connecter, où qu'elles se trouvent par le biais de nos réseaux digitaux et .......</P> 			
+		</div>
+
+		<div class="content">
+			
+			<a href="{{ path('blog_show')}}" class="btn btn-primary"> Lire la suite</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+		</div>
+	</article><br><br>
+
+    <article>
+		<H2>JONI JONI</H2>
+		<center>
+			<P>Qui sommes-nous ?</P>
+		<img src="/image/jonijoni-550x550-550x550.jpg" alt=" sama joni joni" height="200" width="300">
+		</center>	
+		<div class="metadata">
+			<P>JONI-JONI est un système de transfert d’argent et de paiement électronique, développé par la société sénégalaise BOSS (Boygues Solutions Systems Limited),
+			filiale du Groupe BOYGUES qui a démarré ses activités en 2003 à travers sa société « Dak’Cor » dont le métier . .......</P> 			
+		</div>
+
+		<div class="content">
+			
+			<a href="{{ path('blog_show1')}}" class="btn btn-primary"> Lire la suite</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+		</div>
+	</article><br><br>
+
+	
+	<article>
+		<H2>YUP YUP</H2>
+		<center>
+			<P>Qui sommes-nous ?</P>
+		<img src="/image/1-01-yup-logo-you-up.png" alt="YUP YUP" height="200" width="300" >
+		</center>	
+		<div class="metadata">
+			<P>En Afrique subsaharienne, l’inclusion financière se fait aujourd’hui à travers le Mobile Money.</P>
+			<P>Faute de moyens, à cause de la distance ou simplement par manque d’informations, un très grand nombre d’habitants de .......</P>			
+		</div>
+
+		<div class="content">
+			
+			<a href="{{ path('blog_show2')}}" class="btn btn-primary"> Lire la suite</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+		</div>
+	</article>
+
+</section>
+<br><br><br>
+
+<FOOTER>
+	<div>
+		La comptabilité générale présente le détail des flux financiers de l’entreprise dans les documents comptables.
+	</div>
+	
+	<img src="/image/partenaires.jpg" height="100%" width="105%">
+</FOOTER>
+{% endblock %}

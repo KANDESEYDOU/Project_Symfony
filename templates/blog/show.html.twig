@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+	<article>
+			<h1> <center class="them" > BIENVENUE DANS COMPTABILITE MULTISERVICES!</center> </h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+body {
+	background-color: azure
+}
+.them { background-color: skyblue }
+
+</style>
+		<H2>WARI SENEGAL</H2>	
+		<div class="metadata">
+			<center>
+			<img src="/image/OIP.jpg" alt="My Wari">
+			</center>
+			<P>Wari offre un éventail de services financiers et commerciaux accessibles de pratiquement partout: paiement, transfert national et international d'argent, recharge de crédit téléphone, transport, service, marketplace, paiement de factures, communications.. Notre objectif est de fournir des solutions correspondant au plus près aux besoins et aux désirs des personnes et de les connecter, où qu'elles se trouvent par le biais de nos réseaux digitaux et physiques.</P>
+
+			<P>Nous sommes une entreprise véritablement mondiale, ceci sans doute parce que nous sommes nés au coeur de l'Afrique, conscients des besoins et des opportunités de croissance existants sur notre planète.</P>
+
+			<P>Nous sommes en constante expansion, et avons aujourd'hui une représentation physique dans plus de 60 pays. Nous facilitons les transactions en Afrique et dans le monde entier, contribuant ainsi aux opportunités économiques pour tous. Nous sommes un accélérateur de croissance reconnu sur notre continent. Notre plateforme offre la meilleure couverture réseau grâce à plus de 150 partenariats établis à travers le monde et nous avons le plus large éventail de partenaires sur le continent: Banques et institutions financières, institutions publiques, bureaux de poste, loteries nationales, stations-services, entreprises. Nous développons en permanence de nouvelles connections élargissant ainsi notre réseau.</P>
+
+			<P>Wari vise à établir une référence et à renforcer la collaboration entre des acteurs clés du système:  fintech, Telco’s, banques et régulateurs au niveau national et continental, ceci dans le but d'édifier la route vers la mondialisation des services.</P>
+		</div>
+	</article>
+		<div class="content">
+			
+			<a href="{{ path('blog')}}" class="btn btn-primary"> REVOIR NOS SERVICES</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+		</div>
+
+	<FOOTER>
+	<CENTER>	
+	<div>
+		NOS DIFFERENTS PARTENAIRES.
+	</div>
+	</CENTER>
+	<img src="/image/partenaires.jpg" height="100%" width="105%">
+</FOOTER>
+ 
+{% endblock %}   

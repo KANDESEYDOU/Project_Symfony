@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+	<article>
+			<h1> <center class="them" > BIENVENUE DANS COMPTABILITE MULTISERVICES !</center> </h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.them { background-color: skyblue }
+</style>
+		<H2>JONI JONI</H2>	
+		<div class="metadata">
+			<center>
+			<img src="/image/TIC-Transfert-dargent1.jpg" alt="SAMA JONI JONI">
+			</center>
+			<P>JONI-JONI est un système de transfert d’argent et de paiement électronique, développé par la société sénégalaise BOSS (Boygues Solutions Systems Limited),
+			filiale du Groupe BOYGUES qui a démarré ses activités en 2003 à travers sa société « Dak’Cor » dont le métier est le « Conseil en Communication et Marketing ».</P> 
+
+			<P>Le Groupe est actuellement composé de 10 entités évoluant dans le Conseil en Communication, le Marketing, l’impression et l’affichage publicitaires, l’Événementiel, les Média et l’Audiovisuel avec notamment ses chaînes de radio et de télévision.</P>
+
+			<P>Dans le cadre de la diversification de ses produits et services le Groupe s’est lancé dans le développement de solutions informatiques, le transfert d’argent et la consultation médicale à domicile.</P>
+
+		</div>
+	</article>
+	<div class="content">
+			
+			<a href="{{ path('blog')}}" class="btn btn-primary"> REVOIR NOS SERVICES</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+	</div>
+
+	<FOOTER>
+	<CENTER>	
+	<div>
+		NOS DIFFERENTS PARTENAIRES.
+	</div>
+	</CENTER>
+	<img src="/image/partenaires.jpg" height="100%" width="105%">
+</FOOTER>
+ 
+{% endblock %}   

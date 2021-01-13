@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+	<article>
+			<h1> <center class="them" > BIENVENUE DANS COMPTABILITE MULTISERVICES !</center> </h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.them { background-color: skyblue }
+</style>
+		<H2>YUP en bref</H2>	
+		<div class="metadata">
+			<center>
+			<img src="/image/YUP-2.jpg" alt="SAMA JONI JONI" height="30%" width="100%">
+			</center>
+			<P>En Afrique subsaharienne, l’inclusion financière se fait aujourd’hui à travers le Mobile Money.</P> 
+
+			<P>Faute de moyens, à cause de la distance ou simplement par manque d’informations, un très grand nombre d’habitants de pays subsahariens ne sont pas bancarisés.</P>
+
+			<P>Conscient de ce faible taux de bancarisation et soucieux de promouvoir l’inclusion financière de la population et ses accès à des moyens transactionnels et financiers modernes, le groupe Société Générale a développé une offre de Mobile Money simple, sécurisée et accessible à tous : YUP.</P>
+			<H2>Vision</H2>
+
+				<P>YUP, le porte-monnaie électronique (wallet) qui a pour ambition de favoriser l’autonomisation en offrant à chacun de ses porteurs la possibilité de révéler l’entrepreneur qui sommeille en lui.</P>
+
+			<H2>Missions</H2>
+
+			<P>YUP se donne pour missions de :</P>
+
+			<P>Faire bénéficier de ses services au plus grand nombre, dans l’objectif que chacun puisse ainsi accomplir son ambition, qu’elle soit personnelle ou professionnelle.</P>
+			<P>Passer du simple service transactionnel à l’outil qui permettrait d’atteindre ses objectifs.
+			Donner les clés de la réussite ou du succès à chaque porteur de wallet.</P>
+
+		</div>
+	</article>
+	<div class="content">
+			
+			<a href="{{ path('blog')}}" class="btn btn-primary"> REVOIR NOS SERVICES</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+	</div>
+
+	<FOOTER>
+	<CENTER>	
+	<div>
+		NOS DIFFERENTS PARTENAIRES.
+	</div>
+	</CENTER>
+	<img src="/image/partenaires.jpg" height="100%" width="105%">
+</FOOTER>
+ 
+{% endblock %}   

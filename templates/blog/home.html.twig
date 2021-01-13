@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<h1> <center class="them" > BIENVENUE DANS COMPTABILITE MULTISERVICES !</center> </h1>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.them { background-color: skyblue }
+body {
+  background-color: azure
+}
+</style>
+<body>
+
+
+<FORM>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-top" src="/image/images.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="/image/imagesss.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="/image/Wari-Senegal-1110x398.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="/image/OIPP.jpg" style="width:75%" style="height:100%">
+</div>
+</FORM>
+<div class="w3-container">
+  <h2>Les missions d’un comptable</h2>
+  <p>Un professionnel de la comptabilité doit gérer les dépenses et les revenus que génère une entreprise. Chaque année, il produit un plan comptable et effectue des analyses poussées qui permettent d’établir le cap à suivre pour l’entreprise.</p><br>
+
+	<p>Un comptable peut travailler au sein d’une entreprise si celle-ci a les moyens d’en avoir un à sa disposition. Il peut également travailler dans un cabinet d’expertise comptable, qui accompagne majoritairement les PME voire des auto-entrepreneurs.</p><br>
+
+	<p>Parmi les nombreuses tâches de comptabilité générale qu’il peut effectuer il y a : la saisie des écritures de comptabilité, récupérer les factures des fournisseurs, établir des déclarations fiscales et sociales, éditer des feuilles de paie, les tenues des comptes, la gestion des budgets prévisionnels, la clôture des comptes annuels, la gestion des courbes de résultat… Il peut aider également à la création d’entreprise.</p>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+<div class="content">
+			
+			<a href="{{ path('blog')}}" class="btn btn-primary">NOS SERVICES</a>
+			<a href="{{ path('blog_show4')}}" class="btn btn-primary"> Faire une transaction</a>
+</div>
+
+	<FOOTER>
+	<CENTER>	
+	<div>
+		NOS DIFFERENTS PARTENAIRES.
+	</div>
+	</CENTER>
+	<img src="/image/partenaires.jpg" height="100%" width="105%">
+</FOOTER>
+
+{% endblock %}
